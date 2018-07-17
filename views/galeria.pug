@@ -1,0 +1,670 @@
+extends layout
+
+block content
+  section#hero-image.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+    div.hero-head
+      div.container
+        div.navbar.is-shadowless
+          div.navbar-brand
+            a.navbar-item
+              img(src="/images/logo2.png")
+            div.navbar-burger.burger
+              span
+              span
+              span
+          div.navbar-menu
+            div.navbar-end
+              a.navbar-item(href="/") INICIO
+              a.navbar-item(href="nosotros") NOSOTROS
+              a.navbar-item(href="servicios") SERVICIOS
+              a.navbar-item.is-active.is-primary(href="galeria") FOTOS
+              span.navbar-item
+                a.button.is-primary.is-inverted(href="cotizar")
+                  span COTIZA
+    div.hero-body
+      div.container
+        div.columns
+          div.column.has-text-centered.is-white
+            h1.title.is-1.is-white.title-slider CAPTURAMOS CADA MOMENTO
+  section.is-fullhd#galeria
+    div.columns.is-gapless.is-multiline
+      div.column.relative.is-one-quarter(data-target="#modal-1")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-1.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-2")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-2.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-3")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-3.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-4")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-4.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-5")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-5.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-6")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-6.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-7")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-7.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-8")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-8.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-9")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-9.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-10")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-10.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-11")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-11.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-12")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-12.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-13")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-13.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-14")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-14.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-15")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-15.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div.column.relative.is-one-quarter(data-target="#modal-16")
+        figure.image.is-square(style="background-image: url(./images/galeria/galeria-16.png);")
+        div.is-overlay.has-text-centered
+          div.content-text-galery
+            h2.title.title-segoe-bold.is-white DECORACION <br>FRANCIA
+            p.subtitle.is-6.has-text-white 25/02/17
+      div#modal-1.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-2.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-3.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-4.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-5.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-6.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-7.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-8.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-9.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-10.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-11.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-12.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-13.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-14.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-15.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+      div#modal-16.modal
+        div.modal-background
+        div.modal-content.has-background-white
+          div.carousel.carousel-main
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell  
+              img(src="/images/galeria/place/Rectangle.png")
+          div.carousel.carousel-nav
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+            div.carousel-cell
+              img(src="/images/galeria/place/Rectangle.png")
+          p.where-was.has-text-centered Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin magna. Pellentesque a augue id ligula maximus suscipit. Nullam nec mattis nibh. Ut cursus lectus quis rutrum rhoncus. Etiam et iaculis massa, at vestibulum nisi. In mi nisl, euismod eu ex a, congue lobortis nisl. Donec dui magna, interdum nec tristique quis, dignissim et sapien. Sed accumsan, nulla at mollis pellentesque, sem dui porttitor lectus, ac volutpat mi nulla vitae ante. Sed in ornare ligula, auctor ultricies justo. 
+          div.columns.is-gapless.has-text-centered
+            div.column.has-text-white.has-background-primary
+              p.where-was First column
+            div.column.has-text-white.has-background-danger
+              p.where-was Second column
+        button.modal-close.is-large
+  section.hero.is-small
+    div.hero-body
+      div.container
+        div.columns
+          div.column
+            div.field.is-grouped.is-grouped-centered
+              p.control 
+                a.button.is-danger VER MÁS
+
+  footer.has-text-centered
+    div.columns.is-gapless.footer-box-shadow
+      div.column.has-text-right
+        div.hero
+          div.hero-body
+            div.footer-img
+              img(src="/images/logo.png")
+      div.column.has-text-green.has-text-left.info
+        div.hero
+          div.hero-body
+            p 
+              span.icon
+                i.fa.fa-phone
+              span  (01) 232-5656
+            p 
+              span.icon
+                i.fa.fa-envelope
+              span  team@ballonsfiesta.com
+            p 
+              span.icon
+                i.fa.fa-map-marker
+              span  Av. Felicidad 1327, San Miguel
+    p.has-text-green.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>

@@ -1,0 +1,429 @@
+.input.is-primary,
+.textarea.is-primary
+  border-color: #01B4C1 !important
+//@include font-face("Segoe", "fonts/segoeui")
+@font-face
+  font-family: 'Segoe'
+  src: url('/fonts/segoeui.ttf')
+
+@font-face
+  font-family: 'Segoe-bold'
+  src: url('/fonts/segoeuib.ttf')
+
+@font-face
+  font-family: 'Segoe-semibold'
+  src: url('/fonts/segoeuisb.ttf')
+
+@font-face
+  font-family: 'Track'
+  src: url('/fonts/Track.ttf')
+html
+  font-family: 'Segoe', sans-serif !important
+
+@import "../../node_modules/bulma/bulma"
+@import "../../node_modules/wowjs/css/site"
+@import "../../node_modules/wowjs/css/libs/animate"
+
+.input.is-primary,
+.textarea.is-primary
+  border-color: #01B4C1 !important
+
+.title-slider
+  font-family: 'Track'
+
+.title-segoe-normal
+  font-family: 'Segoe', sans-serif
+  font-weight: normal
+
+.title-segoe-bold
+  font-family: 'Segoe-bold', sans-serif
+
+.title-segoe-sbold
+  font-family: 'Segoe-semibold', sans-serif
+
+  // CAROUSEL
+#galeria
+  .carousel-main
+    .carousel-cell
+      width: 100%
+      height: auto
+      text-align: center
+      //margin-left: 20px
+      img
+        display: block
+        width: 100%
+
+  .carousel-cell::before
+    display: block
+    text-align: center
+    line-height: 200px
+    font-size: 80px
+    color: white
+
+  .carousel-nav
+    .carousel-cell
+      height: 110px
+      width: 150px
+  // end: CAROUSEL
+
+//Css: html5sortable
+
+#demos
+  .container
+    position: unset !important
+  .source,
+  .target
+    //min-height: 50px
+    //margin: 0px 25px 10px 0px
+    //padding: 2px
+    //border-width: 1px
+    //border-style: solid
+    //border-radius: 3px
+    list-style-type: none
+    list-style-position: inside
+    li
+      width: 85px
+      height: 85px
+      flex-basis: 0
+      flex-grow: 1
+      flex-shrink: 1
+      margin: 2rem 0
+      padding: 1.5rem
+      border-radius: 30%
+      cursor: pointer
+      //margin: 5px
+      //padding: 5px
+  .source
+    //border: 1px solid #00CBFF
+    width: 85px
+    height: 100%
+    .ui-sortable-placeholder
+      border: 2px dashed black !important
+      background-color: transparent !important
+      visibility: visible !important
+      box-shadow: unset
+    li
+      background-color: #01B4C1
+      border: 1px solid #01B4C1
+      color: white
+      box-shadow: 5px 5px 15px #9c9c9c
+  .target
+    width: 100%
+    height: 100px
+    li
+      background-color: #01B4C1
+      border: 1px solid #01B4C1
+      color: white
+      margin: 2rem auto !important
+      box-shadow: 5px 5px 15px #9c9c9c
+    .ui-sortable-placeholder
+      border: 2px dashed black !important
+      background-color: transparent !important
+      visibility: visible !important
+      box-shadow: none
+  .sortable-dragging
+    border-color: #ccc !important
+    background-color: #fafafa !important
+    color: #bbb !important
+  .sortable-placeholder
+    height: 40px
+
+#touch-cotizar
+  .connected
+    .item
+      color: $white
+      padding: 1.5rem
+      background-color: #00CBFF
+      margin: 2rem 0 2.5rem 0
+      border-radius: 0.5rem
+      width: 80px
+      height: 72px
+    .item-transparent
+      background-color: transparent
+      width: 80px
+      height: 72px
+      border: 1px solid gray
+  .touch-center
+    .connected
+      .item.in
+        width: 80px
+        height: 72px
+        border: 2px dashed black
+        background-color: transparent
+
+
+
+
+//Css end: html5sortable
+
+.button
+  padding-left: 2.8em
+  padding-right: 2.8em
+  padding-top: 1.3em
+  padding-bottom: 1.3em
+.button.is-cyan
+  background-color: #00CBFF !important
+  border-color: transparent
+  box-shadow: none
+  color: #fff
+.has-background-cyan
+  background-color: #00CBFF !important
+
+.title-purple
+  color: #9203FF
+.relative
+  position: relative
+
+.absolute
+  position: absolute
+
+.margin-auto
+  margin: 0 auto
+
+.separator
+  border-top: 0.1rem solid $danger
+  width: 7.75rem
+  height: 0.0625rem
+  margin: 0.5rem auto
+
+#hero-image
+  +desktop
+    .hero-head
+      position: absolute
+      width: 100%
+      top: 0
+      z-index: 1000
+
+.is-slider
+  .hero-body
+    padding: 0
+  .main-slider
+    .carousel-cell
+      flex-grow: 1
+      flex-shrink: 0
+      align-items: center
+      display: flex
+    .flickity-prev-next-button
+      background: transparent
+      .arrow
+        fill: white
+      &.no-svg
+        color: white
+      &:disabled
+        display: none
+    .flickity-page-dots
+      bottom: 50%
+      right: 5%
+      width: auto
+    .flickity-page-dots
+      .dot
+        display: block
+        width: 12px
+        height: 12px
+        opacity: 1
+        margin: 8px 0
+        background: transparent
+        border: 2px solid white
+        &.is-selected
+          background: white
+
+.testimonios
+  .columns
+    padding-top: 1.5rem
+    .box-testimonios
+      padding: 1rem
+      //padding-top: 100%
+      .separator-box
+        border-top: 0.1rem solid white
+        width: 7.5rem
+        height: 0.0625rem
+        margin: 0.5rem auto
+      img
+        border-radius: 50%
+      .subtitle
+        color:#fff
+
+#eventos
+  .columns
+    padding-top: 1.5rem
+  .column
+    .image
+      transition: all 0.5s ease
+      background-position: center
+      background-size: 115%
+    .is-overlay
+      transition: all 0.5s ease
+      display: none
+      margin: 0.75rem
+    &:hover
+      .is-overlay
+        background-color: rgba(153, 0, 255, 0.7)
+        display: flex
+        align-items: center
+        flex-grow: 1
+        flex-shrink: 0
+        div
+          width: 100%
+      .image
+        background-size: 140%
+#equipo
+  .image-rounded
+    border-radius: 67px
+  .columns
+    padding-top: 1.5rem
+  .column
+    .image
+      background-position: center
+      background-size: cover
+    .is-overlay
+      display: none
+      margin: 0.75rem
+      background-color: #00d1b2
+    &:hover
+      .is-overlay
+        display: flex
+        align-items: center
+        flex-grow: 1
+        flex-shrink: 0
+        opacity: 0.7
+        div
+          width: 100%
+    .subtitle.is-white
+      color: #fff
+
+#suscribete
+  .title,
+  .subtitle
+    padding-bottom: 1rem
+  .input
+    height: 2.7em
+
+#mision
+  .columns
+    transition: all 0.5s ease
+    //background-color: rgba(227,58,92,0.8)
+    .only-mision
+      .title
+        background-color: rgba(227,58,92,0.8)
+        padding: 1.5rem 0
+      .hero-body
+        padding-left: 0
+        padding-right: 0
+    .in-hover
+      display: none
+    &:hover
+      transition: all 0.5s ease
+      background-color: rgba(227,58,92,0.8)
+      .in-hover
+        display: flex
+        .title
+          padding: 1.5rem 0
+      .only-mision
+        display: none
+  .align-columns
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-shrink: 0
+
+#vision
+  .columns
+    transition: all 0.5s ease
+    //background-color: rgba(0,203,255,0.6)
+    .only-vision
+      .title
+        background-color: rgba(0,203,255,0.6)
+        padding: 1.5rem 0
+      .hero-body
+        padding-left: 0
+        padding-right: 0
+    .in-hover
+      display: none
+    &:hover
+      transition: all 0.5s ease
+      background-color: rgba(0,203,255,0.6)
+      .in-hover
+        display: flex
+        .title
+          padding: 1.5rem 0
+      .only-vision
+        display: none
+
+  .align-columns
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-shrink: 0
+
+#galeria
+  .column
+    .image
+      background-position: center
+      background-size: 115%
+      //transition: all 0.5s ease
+    .is-overlay
+      //display: none
+      //opacity: 0
+      //transition: all 0.5s ease
+      .content-text-galery
+        width: 100%
+        opacity: 0
+        position: absolute
+        top: 100%
+        transform: translateY(-50%)
+        transition: all 1.5s ease
+        flex-grow: 1
+        flex-shrink: 0
+        //z-index: 100
+    &:hover
+      //display: flex
+      .is-overlay
+        background-color: rgba(0,203,255,0.6)
+      //opacity: 1
+      .content-text-galery
+        top: 50%
+        opacity: 1
+      .image
+        background-size: 130%
+      // .is-overlay
+      //   background-color: rgba(0,203,255,0.6)
+      //   display: flex
+      //   align-items: center
+      //   flex-grow: 1
+      //   flex-shrink: 0
+      //   .content-text-galery
+      //     top: 50%
+      //     opacity: 1
+
+
+
+  .modal
+    .modal-content
+      background-color: $white
+      .where-was
+        padding: 1.20rem 1rem
+
+footer
+  p
+    padding: 0.5rem 0
+    font-size: $size-6
+  .reservados
+    font-size: $size-7
+  .info
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-shrink: 0
+  .footer-img
+    border-right: 2px solid #E33A5C
+  .has-text-green
+    color: #00d1b2
+  .footer-box-shadow
+    border-top: 6px solid #ddd
+    box-shadow: inset 1px 4px 4px 0px rgba(221, 221, 221, 0.65)
+
+//Media Queries
+@media (min-width: 320px) and (max-width: 768px)
+  .footer-img
+    border-right: none !important
+    text-align: center

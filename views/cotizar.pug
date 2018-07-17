@@ -1,0 +1,115 @@
+extends layout
+
+block content
+  section#hero-image.hero.is-medium(style="background-image: url(./images/slider-nosotros.png); background-size: cover;")
+    div.hero-head
+      div.container
+        div.navbar.is-shadowless
+          div.navbar-brand
+            a.navbar-item
+              img(src="/images/logo2.png")
+            div.navbar-burger.burger
+              span
+              span
+              span
+          div.navbar-menu
+            div.navbar-end
+              a.navbar-item(href="/") INICIO
+              a.navbar-item(href="nosotros") NOSOTROS
+              a.navbar-item(href="servicios") SERVICIOS
+              a.navbar-item(href="galeria") FOTOS
+              span.navbar-item
+                a.button.is-primary.is-inverted(href="cotizar")
+                  span COTIZA
+    div.hero-body
+      div.container
+        div.columns
+          div.column.has-text-centered.is-white
+            h1.title.is-1.is-white.title-slider ELIGE TUS MOMENTOS
+  section.hero.has-text-centered#demos
+    div.hero-body
+      p.title.is-4(style="color: #01B4C1") Arrastra los servicios que quieres en tu fiesta 
+      p.subtitle.is-6 Ingresa tus datos y recibirás una cotizacion de forma automatica
+    div.hero-body
+      div.container
+        div.columns
+          div.column.is-one-quarter
+            ul#source-1.source.connected(style="float:right;")
+              li.item Item
+              li.item Item
+              li.item Item
+              li.item Item
+          div.column.is-half.touch-center(style="border-radius: 5%;height: 500px;background-image: url('/images/cotizar/CotizaFiesta.png'); background-size: cover;")
+            div.columns
+              div.column
+                ul#target-1.target.connected(style="float:left;")
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+              div.column
+                ul#target-2.target.connected(style="float:right;")
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+                  li.ui-sortable-placeholder.remove-dashed
+          div.column.is-one-quarter
+            ul#source-2.source.connected
+              li.item Item
+              li.item Item
+              li.item Item
+              li.item Item
+    div.hero-body
+      div.container
+        div.columns
+          div.column.is-offset-2.is-8
+            div.field.is-horizontal
+              div.field-body
+                div.field
+                  div.control.has-icons-left
+                    input.input.is-medium.is-primary(type="text",placeholder="Nombres y Apellidos")
+                    span.icon.is-small.is-left 
+                      i.fa.fa-user
+                div.field
+                  div.control.has-icons-left
+                    input.input.is-medium.is-primary(type="mail",placeholder="Correo electronico")
+                    span.icon.is-small.is-left
+                      i.fa.fa-envelope
+            div.field.is-horizontal
+              div.field-body
+                div.field
+                  div.control.has-icons-left
+                    input.input.is-medium.is-primary(type="text", placeholder="Número")
+                    span.icon.is-small.is-left
+                      i.fa.fa-phone
+                div.field
+                  div.control.has-icons-left
+                    input.input.is-medium.is-primary(type="text", placeholder="Fecha de la fiesta")
+                    span.icon.is-small.is-left
+                      i.fa.fa-calendar
+            div.field.is-grouped.is-grouped-centered
+              p.control
+                a.button.is-primary COTIZAR
+  footer.has-text-centered
+    div.columns.is-gapless.footer-box-shadow
+      div.column.has-text-right
+        div.hero
+          div.hero-body
+            div.footer-img
+              img(src="/images/logo.png")
+      div.column.has-text-green.has-text-left.info
+        div.hero
+          div.hero-body
+            p 
+              span.icon
+                i.fa.fa-phone
+              span  (01) 232-5656
+            p 
+              span.icon
+                i.fa.fa-envelope
+              span  team@ballonsfiesta.com
+            p 
+              span.icon
+                i.fa.fa-map-marker
+              span  Av. Felicidad 1327, San Miguel
+    p.has-text-green.reservados Todos los derechos reservados Ballons Fiestas 2017 - Diseñado por <a href="#">STARTER</a>
